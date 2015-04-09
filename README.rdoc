@@ -1,0 +1,9 @@
+== NGO AIDMAP API
+
+Requirements:
+
+* Ruby 2.2.1
+
+* Rails-api (Rails 4.2.1)
+
+* PostgreSQL
