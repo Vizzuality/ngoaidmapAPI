@@ -10,10 +10,10 @@
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
 
-# Although this is not needed for an api-only application, rails4 
-# requires secret_key_base or secret_token to be defined, otherwise an 
+# Although this is not needed for an api-only application, rails4
+# requires secret_key_base or secret_token to be defined, otherwise an
 # error is raised.
 # Using secret_token for rails3 compatibility. Change to secret_key_base
 # to avoid deprecation warning.
 # Can be safely removed in a rails3 api-only application.
-NgoApi::Application.config.secret_token = 'a3154b2adf01d4209982e5e32166a1a9e71796ca46d52553d8522baa7adc51d35d50bd7746da8a4fe2837b7f959b06f4457e4bc452e808d8d8136730181f8efc'
+NgoApi::Application.config.secret_token = <%= ENV["SECRET_TOKEN"] %>

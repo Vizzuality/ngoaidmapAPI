@@ -15,6 +15,10 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'annotate', '~> 2.6.5'
+  gem 'capistrano', '~> 3.4.0', github: 'capistrano/capistrano'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler'
 end
 group :development, :test do
   gem 'byebug'
