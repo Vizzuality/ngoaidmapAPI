@@ -16,7 +16,7 @@ group :development do
   gem 'meta_request'
   gem 'annotate', '~> 2.6.5'
   gem 'capistrano', '~> 3.4.0', github: 'capistrano/capistrano'
-  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-rails'
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
 end

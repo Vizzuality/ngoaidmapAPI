@@ -5,7 +5,7 @@ set :repo_url, 'git@github.com:Vizzuality/ngoaidmapAPI.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
-set :branch, 'banners'
+set :branch, 'master'
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/home/ubuntu/ngo-api'
 
@@ -22,7 +22,7 @@ set :deploy_to, '/home/ubuntu/ngo-api'
 # set :pty, true
 
 # Default value for :linked_files is []
-#set :linked_files, %w{config/database.yml config/secrets.yml}
+set :linked_files, %w{.env}
 
 # Default value for linked_dirs is []
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
@@ -36,23 +36,8 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 # set the locations that we will look for changed assets to determine whether to precompile
 set :assets_dependencies, %w(app/assets lib/assets vendor/assets Gemfile.lock config/routes.rb)
 
-  desc 'reload the database with seed data'
-  after :publishing, :seed do
-    on roles(:app), in: :sequence, wait: 5 do
-      within release_path do
-        if fetch(:rails_env) == "production"
-          execute :rake, 'db:migrate RAILS_ENV=production'
-          execute :rake, 'db:seed RAILS_ENV=production'
-        else
-          execute :rake, 'db:migrate RAILS_ENV=staging'
-          execute :rake, 'db:seed RAILS_ENV=staging'
-        end
-      end
-    end
-  end
-
   desc 'Restart application'
-  after :seed, :restart do
+  after :deploy, :restart do
     on roles(:app), in: :sequence, wait: 5 do
       execute :touch, release_path.join('tmp/restart.txt')
     end
