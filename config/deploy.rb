@@ -7,7 +7,7 @@ set :repo_url, 'git@github.com:Vizzuality/ngoaidmapAPI.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 set :branch, 'master'
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/ubuntu/ngo-api'
+set :deploy_to, '/home/ubuntu/www/ngo-api'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -51,5 +51,5 @@ set :assets_dependencies, %w(app/assets lib/assets vendor/assets Gemfile.lock co
   #   end
   # end
 
-  after :failed, :rollback
+  #after :failed, :rollback
 
