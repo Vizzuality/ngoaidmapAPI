@@ -14,5 +14,4 @@ class APIVersion
       accept = headers['Accept']
       accept && accept.include?("application/vnd.ngo-api-v#{@version}+json")
     end
-
 end
