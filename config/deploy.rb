@@ -28,7 +28,7 @@ set :linked_files, %w{.env}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # Default value for default_env is {}
-#set :default_env, { path: "/usr/local/rvm/gems/ruby-2.1.2@global/bin/bundler" }
+# set :default_env, { path: "/usr/local/rvm/gems/ruby-2.2.1@ngo-api/bin/bundler" }
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
@@ -51,5 +51,5 @@ set :assets_dependencies, %w(app/assets lib/assets vendor/assets Gemfile.lock co
   #   end
   # end
 
-  #after :failed, :rollback
+ # after :failed, :rollback
 
