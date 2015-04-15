@@ -11,6 +11,7 @@ set :deploy_to, '/home/ubuntu/www/ngo-api'
 
 # Default value for :scm is :git
 # set :scm, :git
+set :rvm_type, :system
 
 # Default value for :format is :pretty
 # set :format, :pretty
