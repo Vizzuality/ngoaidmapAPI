@@ -29,12 +29,12 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 
 # Default value for default_env is {}
 # set :default_env, { path: "/usr/local/rvm/gems/ruby-2.2.1@ngo-api/bin/bundler" }
-set :default_env, { rvm_bin_path: '~/.rvm/bin' }
+# set :default_env, { rvm_bin_path: '/usr/local/rvm/bin/rvm' }
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
 # set the locations that we will look for changed assets to determine whether to precompile
-set :assets_dependencies, %w(app/assets lib/assets vendor/assets Gemfile.lock config/routes.rb)
+set :assets_dependencies, %w(app/assets lib/asset/usr/local/rvm/bin/rvm's vendor/assets Gemfile.lock config/routes.rb)
 
   desc 'Restart application'
   after :deploy, :restart do

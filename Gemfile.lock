@@ -191,9 +191,6 @@ GEM
       json (~> 1.4, >= 1.4.6)
       mustache (~> 0.99, >= 0.99.4)
       rspec (>= 3.0.0)
-    rvm1-capistrano3 (1.3.2.2)
-      capistrano (~> 3.0)
-      sshkit (>= 1.2)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -252,6 +249,5 @@ DEPENDENCIES
   rails-api
   rspec-rails
   rspec_api_documentation
-  rvm1-capistrano3
   spring
   spring-commands-rspec
