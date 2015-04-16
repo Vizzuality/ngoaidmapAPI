@@ -1,8 +1,10 @@
 module Api
   module V1
     class ProjectsController < ApplicationController
-        @projects = Project.all
+      def index
+        @projects = Project.all.limit(10)
         render json: @projects
+      end
     end
   end
 end
