@@ -54,21 +54,21 @@
 class Organization < ActiveRecord::Base
   #has_many :resources, :conditions => 'resources.element_type = #{Iom::ActsAsResource::ORGANIZATION_TYPE}', :foreign_key => :element_id, :dependent => :destroy
   #has_many :media_resources, :conditions => 'media_resources.element_type = #{Iom::ActsAsResource::ORGANIZATION_TYPE}', :foreign_key => :element_id, :dependent => :destroy, :order => 'position ASC'
-  has_many :projects, :foreign_key => :primary_organization_id
+  has_many :projects, foreign_key: :primary_organization_id
 
-  has_attached_file :logo, :styles => {
-                                      :small => {
-                                        :geometry => "80x46>",
-                                        :format => 'jpg'
+  has_attached_file :logo, styles: {
+                                      small: {
+                                        geometry: "80x46>",
+                                        format: 'jpg'
                                       },
-                                      :medium => {
-                                        :geometry => "200x150>",
-                                        :format => 'jpg'
+                                      medium: {
+                                        geometry: "200x150>",
+                                        format: 'jpg'
                                       }
                                     },
-                            :url => "/system/:attachment/:id/:style.:extension"
+                            url: "/system/:attachment/:id/:style.:extension"
 
-  has_many :sites, :foreign_key => :project_context_organization_id
-  has_many :donations, :through => :projects
+  has_many :sites, foreign_key: :project_context_organization_id
+  has_many :donations, through: :projects
   has_one :user
 end

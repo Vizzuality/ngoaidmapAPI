@@ -23,29 +23,29 @@
 
 class MediaResource < ActiveRecord::Base
 
-  has_attached_file :picture, :styles => {
-                                      :small => {
-                                        :geometry => "80x46#",
-                                        :format => 'jpg'
+  has_attached_file :picture, :styles: {
+                                      small: {
+                                        geometry: "80x46#",
+                                        format: 'jpg'
                                       },
-                                      :medium => {
-                                        :geometry => "660x400#",
-                                        :format => 'jpg'
+                                      medium: {
+                                        geometry: "660x400#",
+                                        format: 'jpg'
                                       }
                                     },
-                            :convert_options => {
-                              :all => "-quality 90"
+                            convert_options: {
+                              all: "-quality 90"
                             },
-                            :url => "/system/:attachment/:id/:style.:extension"
+                            url: "/system/:attachment/:id/:style.:extension"
 
-  has_attached_file :video_thumb, :styles => {
-                                      :medium => {
-                                        :geometry => "660x400#",
-                                        :format => 'jpg'
+  has_attached_file :video_thumb, styles: {
+                                      medium: {
+                                        geometry: "660x400#",
+                                        format: 'jpg'
                                       }
                                     },
-                            :convert_options => {
-                              :all => "-quality 90"
+                            convert_options: {
+                              all: "-quality 90"
                             },
-                            :url => "/system/:attachment/:id/:style.:extension"
+                            url: "/system/:attachment/:id/:style.:extension"
 end

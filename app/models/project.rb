@@ -36,12 +36,12 @@
 #
 
 class Project < ActiveRecord::Base
-  belongs_to :primary_organization, :foreign_key => :primary_organization_id, :class_name => 'Organization'
+  belongs_to :primary_organization, foreign_key: :primary_organization_id, class_name: 'Organization'
   has_and_belongs_to_many :clusters
   has_and_belongs_to_many :sectors
-  has_and_belongs_to_many :regions, :after_add => :add_to_country, :after_remove => :remove_from_country
+  has_and_belongs_to_many :regions
   has_and_belongs_to_many :countries
-  has_and_belongs_to_many :tags, :after_add => :update_tag_counter, :after_remove => :update_tag_counter
+  has_and_belongs_to_many :tags
   #has_many :resources, :conditions => proc {"resources.element_type = #{Iom::ActsAsResource::PROJECT_TYPE}"}, :foreign_key => :element_id, :dependent => :destroy
   #has_many :media_resources, :conditions => proc {"media_resources.element_type = #{Iom::ActsAsResource::PROJECT_TYPE}"}, :foreign_key => :element_id, :dependent => :destroy, :order => 'position ASC'
   has_many :donations, :dependent => :destroy
@@ -54,5 +54,14 @@ class Project < ActiveRecord::Base
                           joins(:regions).
                           includes(:countries).
                           where('countries_projects.project_id IS NULL AND regions.id IS NOT NULL')}
+  scope :organizations, -> (orgs){where(primary_organization_id: orgs)}
+
+  def self.fetch_all(options = {})
+    projects = Project.joins([:regions, :primary_organization, :sectors, donations: :donor]).includes(:countries)
+    projects = projects.organizations(options[:organizations]) if options[:organizations]
+    projects = projects.active
+    projects = projects.group(:id)
+    projects
+  end
 
 end

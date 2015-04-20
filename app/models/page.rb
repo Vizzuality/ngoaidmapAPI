@@ -18,18 +18,11 @@ class Page < ActiveRecord::Base
 
   belongs_to :site
 
-  validates_presence_of   :title
-  validates_uniqueness_of :permalink, :scope => [:site_id]
-  validates_uniqueness_of :title, :scope => [:site_id]
-
-  before_create :set_permalink, :set_status
-  before_destroy :set_children_parent
-
-  scope :published, -> {where(:published => true)}
-  scope :highlighted, -> {where(:parent_id => nil)}
+  scope :published, -> {where(published: true)}
+  scope :highlighted, -> {where(parent_id: nil)}
 
   def children
-    Page.where(:parent_id => self.id).order("order_index ASC")
+    Page.where(parent_id: self.id).order("order_index ASC")
   end
 
   def  parent
@@ -55,7 +48,7 @@ class Page < ActiveRecord::Base
   end
 
   def self.from_param(param)
-    scoped.where(:permalink => param).first
+    scoped.where(permalink: param).first
   end
 
   def self.about(site)
