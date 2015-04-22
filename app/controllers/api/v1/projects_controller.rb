@@ -7,7 +7,7 @@ module Api
       end
 
       def project_params
-        params.permit(organizations:[], sectors:[], donors:[], countries:[], regions:[])
+        params.permit(:format, organizations:[], sectors:[], donors:[], countries:[], regions:[])
       end
     end
   end

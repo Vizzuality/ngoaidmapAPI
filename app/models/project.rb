@@ -61,14 +61,14 @@ class Project < ActiveRecord::Base
   scope :regions, -> (regions){where(regions: {id: regions})}
 
   def self.fetch_all(options = {})
-    projects = Project.joins([:primary_organization]).includes(:countries, :regions, :sectors, :donors)
+    projects = Project.includes([:primary_organization]).eager_load(:countries, :regions, :sectors, :donors)
     projects = projects.organizations(options[:organizations]) if options[:organizations]
-    projects = projects.sectors(options[:sectors])             if options[:sectors]
-    projects = projects.donors(options[:donors])               if options[:donors]
     projects = projects.countries(options[:countries])         if options[:countries]
     projects = projects.regions(options[:regions])             if options[:regions]
+    projects = projects.sectors(options[:sectors])             if options[:sectors]
+    projects = projects.donors(options[:donors])               if options[:donors]
     projects = projects.active
-    projects = projects.group('projects.id', 'countries.id', 'regions.id', 'sectors.id', 'donors.id')
-    projects
+    projects = projects.group('projects.id', 'countries.id', 'regions.id', 'sectors.id', 'donors.id', 'organizations.id')
+    projects.uniq
   end
 end
