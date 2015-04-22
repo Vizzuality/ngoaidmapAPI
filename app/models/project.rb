@@ -55,13 +55,20 @@ class Project < ActiveRecord::Base
                           includes(:countries).
                           where('countries_projects.project_id IS NULL AND regions.id IS NOT NULL')}
   scope :organizations, -> (orgs){where(primary_organization_id: orgs)}
+  scope :sectors, -> (sectors){where(sectors: {id: sectors})}
+  scope :donors, -> (donors){where(donors: {id: donors})}
+  scope :countries, -> (countries){where(countries: {id: countries})}
+  scope :regions, -> (regions){where(regions: {id: regions})}
 
   def self.fetch_all(options = {})
-    projects = Project.joins([:regions, :primary_organization, :sectors, donations: :donor]).includes(:countries)
+    projects = Project.joins([:primary_organization]).includes(:countries, :regions, :sectors, :donors)
     projects = projects.organizations(options[:organizations]) if options[:organizations]
+    projects = projects.sectors(options[:sectors])             if options[:sectors]
+    projects = projects.donors(options[:donors])               if options[:donors]
+    projects = projects.countries(options[:countries])         if options[:countries]
+    projects = projects.regions(options[:regions])             if options[:regions]
     projects = projects.active
-    projects = projects.group(:id)
+    projects = projects.group('projects.id', 'countries.id', 'regions.id', 'sectors.id', 'donors.id')
     projects
   end
-
 end
