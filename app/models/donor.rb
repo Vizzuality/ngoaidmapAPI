@@ -32,14 +32,14 @@ class Donor < ActiveRecord::Base
   has_many :offices, dependent: :destroy
 
   has_attached_file :logo, styles: {
-                                      small: {
-                                        geometry: "80x46>",
-                                        format: 'jpg'
-                                      },
-                                      medium: {
-                                        geometry: "200x150>",
-                                        format: 'jpg'
-                                      }
-                                    },
-                            url: "/system/:attachment/:id/:style.:extension"
+      small: {
+        geometry: "80x46>",
+        format: 'jpg'
+      },
+      medium: {
+        geometry: "200x150>",
+        format: 'jpg'
+      }
+    },
+    url: "/system/:attachment/:id/:style.:extension"
 end
