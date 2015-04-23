@@ -8,4 +8,8 @@ class DonorSerializer < ActiveModel::Serializer
   def type
     'donor'
   end
+
+  def logo
+    object.logo(:medium)
+  end
 end
