@@ -32,7 +32,7 @@ group :development, :test do
   gem 'bullet'
 end
 group :test do
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '~> 4.0'
   gem 'rspec-rails'
   gem 'database_cleaner'
 end
