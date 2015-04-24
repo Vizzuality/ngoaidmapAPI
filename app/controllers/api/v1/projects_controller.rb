@@ -6,6 +6,12 @@ module Api
         render json: @projects, root: 'data', meta: {total: @projects.length}, include: ['organization', 'sectors', 'donors', 'countries', 'regions']
       end
 
+      def show
+        @project = Project.find(params[:id])
+        render json: @project, root: 'data', include: ['organization', 'sectors', 'donors', 'countries', 'regions']
+      end
+
+
       def project_params
         params.permit(:format, organizations:[], sectors:[], donors:[], countries:[], regions:[])
       end
