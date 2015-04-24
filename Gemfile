@@ -7,6 +7,7 @@ gem 'dotenv-rails'
 gem 'bcrypt', '~> 3.1.2'
 gem 'raddocs'
 gem 'pg'
+gem 'activerecord-postgis-adapter', '3.0.0.beta2'
 gem 'paperclip'
 group :development do
   gem 'spring'
