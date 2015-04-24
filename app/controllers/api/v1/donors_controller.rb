@@ -3,7 +3,7 @@ module Api
     class DonorsController < ApplicationController
       def show
         @donor = Donor.find(params[:id])
-        render json: @donor
+        render json: @donor, include: ['donated_projects', 'offices']
       end
     end
   end
