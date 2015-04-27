@@ -29,7 +29,7 @@ resource 'Project' do
       s.id
     end
 
-    example_request "Getting a list of projects by implementing organizations" do
+    example_request "Getting a list of projects by implementing organization" do
       expect(status).to eq(200)
       results = JSON.parse(response_body)['data'].map{|r| r['name']}
       puts results
@@ -110,7 +110,7 @@ resource 'Project' do
     let(:id) { project.id }
     let(:name) { project.name }
 
-    example_request "Get a project show page" do
+    example_request "Get a particular project data" do
       expect(status).to eq(200)
       results = JSON.parse(response_body)
       expect(results.length).to be == 1

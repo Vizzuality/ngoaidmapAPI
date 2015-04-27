@@ -40,8 +40,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"8a4d51f6232d1ccdf7cb152c7b732f71\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "338c973e-0856-4da8-8f79-daac5d639488",
-        "X-Runtime": "0.018791",
+        "X-Request-Id": "2f1b501c-df3d-4a2f-a0e7-6563eef5109c",
+        "X-Runtime": "0.018338",
         "Content-Length": "361"
       },
       "response_content_type": "application/json; charset=utf-8",
