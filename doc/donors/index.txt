@@ -1,0 +1,26 @@
+Get a donor's show page
+-----------------------
+
+Parameters:
+  * id - A donor's id
+
+Request:
+  GET /donors/1
+  Accept: application/json; application/vnd.esios-api-v1+json
+  Content-Type: application/json
+  Cookie: 
+  Host: http://
+
+Response:
+  Status: 200 OK
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 385
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"558388761fc62edd622a0a88d87f46e2"
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-Request-Id: 220c1e03-842d-4567-acc0-a2146ff2734d
+  X-Runtime: 0.124128
+  X-XSS-Protection: 1; mode=block
+
+  {"data":{"type":"donor","id":"1","name":"Red Cross","description":null,"website":null,"twitter":null,"facebook":null,"contact_person_name":null,"contact_company":null,"contact_person_position":null,"contact_email":null,"contact_phone_number":null,"site_specific_information":null,"logo":"/logos/medium/missing.png","links":{"donated_projects":{"linkage":[]},"offices":{"linkage":[]}}}}

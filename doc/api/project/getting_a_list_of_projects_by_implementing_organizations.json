@@ -1,0 +1,51 @@
+{
+  "resource": "Project",
+  "http_method": "GET",
+  "route": "/projects?organizations[]=:organization",
+  "description": "Getting a list of projects by implementing organizations",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "organizations",
+      "description": "Array. Organization ids"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/projects?organizations[]=1",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json; application/vnd.esios-api-v1+json",
+        "Content-Type": "application/json",
+        "Host": "http://api.ngoaidmap.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "organizations": [
+          "1"
+        ]
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"data\":[{\"type\":\"projects\",\"id\":\"1\",\"name\":\"project_with_organization\",\"description\":null,\"links\":{\"organization\":{\"linkage\":{\"type\":\"organizations\",\"id\":\"1\"}},\"sectors\":{\"linkage\":[]},\"countries\":{\"linkage\":[]},\"regions\":{\"linkage\":[]}}}],\"included\":[{\"id\":\"1\",\"name\":\"One Organization\",\"type\":\"organizations\"}],\"meta\":{\"total\":1}}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"0d0a867676fadd040c51b2aff54f1510\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "0446b4db-fbda-4bf5-9a85-f523e6d99276",
+        "X-Runtime": "0.019025",
+        "Content-Length": "333"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://api.ngoaidmap.com/projects?organizations[]=1\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.esios-api-v1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: http://api.ngoaidmap.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

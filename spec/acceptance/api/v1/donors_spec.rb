@@ -3,7 +3,7 @@ require 'acceptance_helper'
 resource 'Donors' do
   header "Accept", "application/json; application/vnd.esios-api-v1+json"
   header "Content-Type", "application/json"
-  header 'Host', 'http://'
+  header 'Host', 'http://api.ngoaidmap.org'
 
   let!(:donor) do
     create(:donor)

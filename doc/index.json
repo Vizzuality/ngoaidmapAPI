@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "name": "Donors",
+      "examples": [
+        {
+          "description": "Get a donor's show page",
+          "link": "donors/get_a_donor's_show_page.json",
+          "groups": "all"
+        }
+      ]
+    }
+  ]
+}

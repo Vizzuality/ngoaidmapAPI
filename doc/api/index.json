@@ -1,0 +1,54 @@
+{
+  "resources": [
+    {
+      "name": "Donors",
+      "examples": [
+        {
+          "description": "Get a donor's show page",
+          "link": "donors/get_a_donor's_show_page.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Project",
+      "examples": [
+        {
+          "description": "Get a project's show page",
+          "link": "project/get_a_project's_show_page.json",
+          "groups": "all"
+        },
+        {
+          "description": "Getting a list of projects",
+          "link": "project/getting_a_list_of_projects.json",
+          "groups": "all"
+        },
+        {
+          "description": "Getting a list of projects by countries",
+          "link": "project/getting_a_list_of_projects_by_countries.json",
+          "groups": "all"
+        },
+        {
+          "description": "Getting a list of projects by donors",
+          "link": "project/getting_a_list_of_projects_by_donors.json",
+          "groups": "all"
+        },
+        {
+          "description": "Getting a list of projects by implementing organizations",
+          "link": "project/getting_a_list_of_projects_by_implementing_organizations.json",
+          "groups": "all"
+        },
+        {
+          "description": "Getting a list of projects by regions",
+          "link": "project/getting_a_list_of_projects_by_regions.json",
+          "groups": "all"
+        },
+        {
+          "description": "Getting a list of projects by sectors",
+          "link": "project/getting_a_list_of_projects_by_sectors.json",
+          "groups": "all"
+        }
+      ]
+    }
+  ]
+}

@@ -54,7 +54,7 @@ class Project < ActiveRecord::Base
                           joins(:regions).
                           includes(:countries).
                           where('countries_projects.project_id IS NULL AND regions.id IS NOT NULL')}
-  scope :organizations, -> (orgs){where(primary_organization_id: orgs)}
+  scope :organizations, -> (orgs){where(organizations: {id: orgs})}
   scope :sectors, -> (sectors){where(sectors: {id: sectors})}
   scope :donors, -> (donors){where(donors: {id: donors})}
   scope :countries, -> (countries){where(countries: {id: countries})}

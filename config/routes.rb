@@ -6,5 +6,6 @@ Rails.application.routes.draw do
       resources :donors, only: [:show]
     end
   end
-  root 'welcome#index'
+   mount Raddocs::App => "/docs"
+  #root 'welcome#index'
 end
