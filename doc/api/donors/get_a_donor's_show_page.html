@@ -140,9 +140,9 @@ table th, table td {
           <h3>Request</h3>
 
           <h4>Headers</h4>
-          <pre class="request headers">Accept: application/json; application/vnd.esios-api-v1+json
+          <pre class="request headers">Accept: application/json; application/vnd.api+json
 Content-Type: application/json
-Host: http://
+Host: http://api.ngoaidmap.com
 Cookie: </pre>
 
           <h4>Route</h4>
@@ -150,6 +150,12 @@ Cookie: </pre>
 
 
 
+            <h4>cURL</h4>
+            <pre class="request curl">curl &quot;http://api.ngoaidmap.com/donors/1&quot; -X GET \
+	-H &quot;Accept: application/json; application/vnd.api+json&quot; \
+	-H &quot;Content-Type: application/json&quot; \
+	-H &quot;Host: http://api.ngoaidmap.com&quot; \
+	-H &quot;Cookie: &quot;</pre>
 
             <h3>Response</h3>
             <h4>Headers</h4>
@@ -159,8 +165,8 @@ X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
 ETag: W/&quot;558388761fc62edd622a0a88d87f46e2&quot;
 Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: 8a038024-ab55-46f6-bd59-8e1ff79f1cdb
-X-Runtime: 0.109535
+X-Request-Id: 420d8a6b-4f5b-4c5f-93ff-b1cb92d35986
+X-Runtime: 0.105192
 Content-Length: 385</pre>
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
