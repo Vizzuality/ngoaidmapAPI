@@ -20,13 +20,13 @@
       "request_body": null,
       "request_headers": {
         "Accept": "application/json; application/vnd.api+json",
-        "Content-Type": "application/json",
+        "Content-Type": "application/vnd.api+json",
         "Host": "http://api.ngoaidmap.org",
         "Cookie": ""
       },
       "request_query_parameters": {
       },
-      "request_content_type": "application/json",
+      "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
       "response_body": "{\"data\":{\"type\":\"donor\",\"id\":\"2\",\"name\":\"Red Cross\",\"description\":null,\"website\":null,\"twitter\":null,\"facebook\":null,\"contact_person_name\":null,\"contact_company\":null,\"contact_person_position\":null,\"contact_email\":null,\"contact_phone_number\":null,\"site_specific_information\":null,\"logo\":\"/logos/medium/missing.png\",\"links\":{\"donated_projects\":{\"linkage\":[]},\"offices\":{\"linkage\":[]}}}}",
@@ -37,12 +37,12 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"6b03f1984a4873a09b2bdcb550fea62f\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "35df85fd-5188-4b93-baed-f7be7abe7b17",
-        "X-Runtime": "0.032848",
+        "X-Request-Id": "a0db6302-de11-448e-9efd-a51ceca8df20",
+        "X-Runtime": "0.031381",
         "Content-Length": "385"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://api.ngoaidmap.com/donors/2\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.api+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: http://api.ngoaidmap.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://api.ngoaidmap.org/donors/2\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.api+json\" \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Host: http://api.ngoaidmap.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }

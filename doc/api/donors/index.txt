@@ -19,11 +19,11 @@ Response:
   ETag: W/"6b03f1984a4873a09b2bdcb550fea62f"
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Request-Id: bb8cf0f2-0d38-4b80-a1ca-309905d416be
-  X-Runtime: 0.108948
+  X-Request-Id: a0db6302-de11-448e-9efd-a51ceca8df20
+  X-Runtime: 0.031381
   X-XSS-Protection: 1; mode=block
 
-  {"data":{"type":"donor","id":"1","name":"Red Cross","description":null,"website":null,"twitter":null,"facebook":null,"contact_person_name":null,"contact_company":null,"contact_person_position":null,"contact_email":null,"contact_phone_number":null,"site_specific_information":null,"logo":"/logos/medium/missing.png","links":{"donated_projects":{"linkage":[]},"offices":{"linkage":[]}}}}
+  {"data":{"type":"donor","id":"2","name":"Red Cross","description":null,"website":null,"twitter":null,"facebook":null,"contact_person_name":null,"contact_company":null,"contact_person_position":null,"contact_email":null,"contact_phone_number":null,"site_specific_information":null,"logo":"/logos/medium/missing.png","links":{"donated_projects":{"linkage":[]},"offices":{"linkage":[]}}}}
 
 
 Get the show page for a non existing donor
@@ -33,11 +33,11 @@ Parameters:
   * id - A donor's id
 
 Request:
-  GET /donors/3
+  GET /donors/4
   Accept: application/json; application/vnd.api+json
   Content-Type: application/vnd.api+json
   Cookie: 
-  Host: http://api.ngoaidmap.com
+  Host: http://api.ngoaidmap.org
 
 Response:
   Status: 404 Not Found
@@ -46,8 +46,10 @@ Response:
   Content-Type: application/json; charset=utf-8
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Request-Id: 1584374a-eb15-47ef-aed5-8b36695f2cd5
-  X-Runtime: 0.004035
+  X-Request-Id: a6e97b29-d188-4a12-bd14-2ab0813b6beb
+  X-Runtime: 0.002833
   X-XSS-Protection: 1; mode=block
 
   {"errors":[{"status":"404","title":"Record not found"}]}
+
+

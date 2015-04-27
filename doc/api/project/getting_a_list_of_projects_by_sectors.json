@@ -40,12 +40,12 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"4603f3884cdce50f313bb94024f3db2f\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "bb08b28c-a5fe-4290-9d3c-9a377a36a686",
-        "X-Runtime": "0.019516",
+        "X-Request-Id": "df6b60e7-c5b9-4160-933d-1285e6317c1b",
+        "X-Runtime": "0.014477",
         "Content-Length": "314"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://api.ngoaidmap.com/projects?sectors[]=1\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.esios-api-v1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: http://api.ngoaidmap.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://api.ngoaidmap.org/projects?sectors[]=1\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.esios-api-v1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: http://api.ngoaidmap.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }
