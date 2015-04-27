@@ -16,10 +16,9 @@ resource 'Donors' do
 
     example_request "Get a donor's show page" do
       expect(status).to eq(200)
-      results = JSON.parse(response_body)['data']
+      results = JSON.parse(response_body)
       expect(results.length).to be == 1
-      expect(results[0]['name']).to  be == name
-      expect(results[5]['url']).to   be == "/compare-groups/3"
+      expect(results['data']['name']).to  be == name
     end
   end
 end
