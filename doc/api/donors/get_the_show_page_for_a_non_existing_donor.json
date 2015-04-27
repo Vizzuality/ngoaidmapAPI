@@ -1,0 +1,47 @@
+{
+  "resource": "Donors",
+  "http_method": "GET",
+  "route": "/donors/:id",
+  "description": "Get the show page for a non existing donor",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "id",
+      "description": "A donor's id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/donors/3",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json; application/vnd.api+json",
+        "Content-Type": "application/vnd.api+json",
+        "Host": "http://api.ngoaidmap.com",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 404,
+      "response_status_text": "Not Found",
+      "response_body": "{\"errors\":[{\"status\":\"404\",\"title\":\"Record not found\"}]}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "1584374a-eb15-47ef-aed5-8b36695f2cd5",
+        "X-Runtime": "0.004035",
+        "Content-Length": "56"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://api.ngoaidmap.com/donors/3\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.api+json\" \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Host: http://api.ngoaidmap.com\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}
