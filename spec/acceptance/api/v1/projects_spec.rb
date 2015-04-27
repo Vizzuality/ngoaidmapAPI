@@ -110,7 +110,7 @@ resource 'Project' do
     let(:id) { project.id }
     let(:name) { project.name }
 
-    example_request "Get a project's show page" do
+    example_request "Get a project show page" do
       expect(status).to eq(200)
       results = JSON.parse(response_body)
       expect(results.length).to be == 1

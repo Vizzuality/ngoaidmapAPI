@@ -1,7 +1,7 @@
 require 'acceptance_helper'
 
 resource 'Donors' do
-  header "Accept", "application/json; application/vnd.esios-api-v1+json"
+  header "Accept", "application/json; application/vnd.api+json"
   header "Content-Type", "application/json"
   header 'Host', 'http://api.ngoaidmap.org'
 
@@ -14,7 +14,7 @@ resource 'Donors' do
     let(:id) { donor.id }
     let(:name) { donor.name }
 
-    example_request "Get a donor's show page" do
+    example_request "Get a donor show page" do
       expect(status).to eq(200)
       results = JSON.parse(response_body)
       expect(results.length).to be == 1

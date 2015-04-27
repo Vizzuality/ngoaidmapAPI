@@ -4,8 +4,8 @@
       "name": "Donors",
       "examples": [
         {
-          "description": "Get a donor's show page",
-          "link": "donors/get_a_donor's_show_page.json",
+          "description": "Get a donor show page",
+          "link": "donors/get_a_donor_show_page.json",
           "groups": "all"
         }
       ]
@@ -14,8 +14,8 @@
       "name": "Project",
       "examples": [
         {
-          "description": "Get a project's show page",
-          "link": "project/get_a_project's_show_page.json",
+          "description": "Get a project show page",
+          "link": "project/get_a_project_show_page.json",
           "groups": "all"
         },
         {

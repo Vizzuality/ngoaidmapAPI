@@ -2,7 +2,7 @@
   "resource": "Project",
   "http_method": "GET",
   "route": "/projects/:id",
-  "description": "Get a project's show page",
+  "description": "Get a project show page",
   "explanation": null,
   "parameters": [
     {
@@ -37,8 +37,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"58a4bb1e50b7ebf01085740fbb120b63\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "ba796f92-e1a5-4003-9a0d-3029699b7653",
-        "X-Runtime": "0.007658",
+        "X-Request-Id": "e7a1382d-6d57-46b4-a761-7b8915484ab8",
+        "X-Runtime": "0.007845",
         "Content-Length": "197"
       },
       "response_content_type": "application/json; charset=utf-8",

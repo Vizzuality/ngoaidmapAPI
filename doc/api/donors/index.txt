@@ -1,12 +1,12 @@
-Get a donor's show page
------------------------
+Get a donor show page
+---------------------
 
 Parameters:
   * id - A donor's id
 
 Request:
   GET /donors/2
-  Accept: application/json; application/vnd.esios-api-v1+json
+  Accept: application/json; application/vnd.api+json
   Content-Type: application/json
   Cookie: 
   Host: http://api.ngoaidmap.org
@@ -19,8 +19,8 @@ Response:
   ETag: W/"6b03f1984a4873a09b2bdcb550fea62f"
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Request-Id: bd31832d-e97e-485a-80e6-df3c321af5b6
-  X-Runtime: 0.032080
+  X-Request-Id: dc3a4a36-3d2a-4be2-a788-34246a8465f8
+  X-Runtime: 0.031237
   X-XSS-Protection: 1; mode=block
 
   {"data":{"type":"donor","id":"2","name":"Red Cross","description":null,"website":null,"twitter":null,"facebook":null,"contact_person_name":null,"contact_company":null,"contact_person_position":null,"contact_email":null,"contact_phone_number":null,"site_specific_information":null,"logo":"/logos/medium/missing.png","links":{"donated_projects":{"linkage":[]},"offices":{"linkage":[]}}}}

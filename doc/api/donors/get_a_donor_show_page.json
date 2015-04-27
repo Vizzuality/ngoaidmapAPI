@@ -2,7 +2,7 @@
   "resource": "Donors",
   "http_method": "GET",
   "route": "/donors/:id",
-  "description": "Get a donor's show page",
+  "description": "Get a donor show page",
   "explanation": null,
   "parameters": [
     {
@@ -19,7 +19,7 @@
       "request_path": "/donors/2",
       "request_body": null,
       "request_headers": {
-        "Accept": "application/json; application/vnd.esios-api-v1+json",
+        "Accept": "application/json; application/vnd.api+json",
         "Content-Type": "application/json",
         "Host": "http://api.ngoaidmap.org",
         "Cookie": ""
@@ -37,12 +37,12 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"6b03f1984a4873a09b2bdcb550fea62f\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "bd31832d-e97e-485a-80e6-df3c321af5b6",
-        "X-Runtime": "0.032080",
+        "X-Request-Id": "dc3a4a36-3d2a-4be2-a788-34246a8465f8",
+        "X-Runtime": "0.031237",
         "Content-Length": "385"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://api.ngoaidmap.com/donors/2\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.esios-api-v1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: http://api.ngoaidmap.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://api.ngoaidmap.com/donors/2\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.api+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: http://api.ngoaidmap.org\" \\\n\t-H \"Cookie: \""
     }
   ]
 }
