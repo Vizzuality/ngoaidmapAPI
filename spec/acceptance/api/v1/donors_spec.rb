@@ -28,6 +28,9 @@ resource 'Donors' do
 
     example_request "Get the show page for a non existing donor" do
       expect(status).to eq(404)
+      results = JSON.parse(response_body)
+      expect(results.length).to be == 1
+      expect(results['errors'].first['status']).to be == '404'
     end
   end
 end
