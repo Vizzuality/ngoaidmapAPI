@@ -2,7 +2,7 @@
   "resource": "Donors",
   "http_method": "GET",
   "route": "/donors/:id",
-  "description": "Get the show page for a non existing donor",
+  "description": "Get the data of a non existing donor",
   "explanation": null,
   "parameters": [
     {
@@ -36,8 +36,8 @@
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "a6e97b29-d188-4a12-bd14-2ab0813b6beb",
-        "X-Runtime": "0.002833",
+        "X-Request-Id": "12ddf71c-3a62-43be-a746-6ad743d52f95",
+        "X-Runtime": "0.008366",
         "Content-Length": "56"
       },
       "response_content_type": "application/json; charset=utf-8",

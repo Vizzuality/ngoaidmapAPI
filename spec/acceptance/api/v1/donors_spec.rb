@@ -14,7 +14,7 @@ resource 'Donors' do
     let(:id) { donor.id }
     let(:name) { donor.name }
 
-    example_request "Get a donor show page" do
+    example_request "Get a particular donor data" do
       expect(status).to eq(200)
       results = JSON.parse(response_body)
       expect(results.length).to be == 1
@@ -26,7 +26,7 @@ resource 'Donors' do
     parameter :id, "A donor's id"
     let(:id) { donor.id + 1 }
 
-    example_request "Get the show page for a non existing donor" do
+    example_request "Get the data of a non existing donor" do
       expect(status).to eq(404)
       results = JSON.parse(response_body)
       expect(results.length).to be == 1

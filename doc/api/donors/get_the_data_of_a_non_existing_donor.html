@@ -113,7 +113,7 @@ table th, table td {
       <h1>Donors API</h1>
 
       <div class="article">
-        <h2>Get a donor show page</h2>
+        <h2>Get the data of a non existing donor</h2>
         <h3>GET /donors/:id</h3>
 
           <h3>Parameters</h3>
@@ -146,12 +146,12 @@ Host: http://api.ngoaidmap.org
 Cookie: </pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /donors/2</pre>
+          <pre class="request route highlight">GET /donors/4</pre>
 
 
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://api.ngoaidmap.org/donors/2&quot; -X GET \
+            <pre class="request curl">curl &quot;http://api.ngoaidmap.org/donors/4&quot; -X GET \
 	-H &quot;Accept: application/json; application/vnd.api+json&quot; \
 	-H &quot;Content-Type: application/vnd.api+json&quot; \
 	-H &quot;Host: http://api.ngoaidmap.org&quot; \
@@ -163,15 +163,14 @@ Cookie: </pre>
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-ETag: W/&quot;6b03f1984a4873a09b2bdcb550fea62f&quot;
-Cache-Control: max-age=0, private, must-revalidate
-X-Request-Id: a0db6302-de11-448e-9efd-a51ceca8df20
-X-Runtime: 0.031381
-Content-Length: 385</pre>
+Cache-Control: no-cache
+X-Request-Id: 12ddf71c-3a62-43be-a746-6ad743d52f95
+X-Runtime: 0.008366
+Content-Length: 56</pre>
             <h4>Status</h4>
-            <pre class="response status">200 OK</pre>
+            <pre class="response status">404 Not Found</pre>
               <h4>Body</h4>
-              <pre class="response body">{&quot;data&quot;:{&quot;type&quot;:&quot;donor&quot;,&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Red Cross&quot;,&quot;description&quot;:null,&quot;website&quot;:null,&quot;twitter&quot;:null,&quot;facebook&quot;:null,&quot;contact_person_name&quot;:null,&quot;contact_company&quot;:null,&quot;contact_person_position&quot;:null,&quot;contact_email&quot;:null,&quot;contact_phone_number&quot;:null,&quot;site_specific_information&quot;:null,&quot;logo&quot;:&quot;/logos/medium/missing.png&quot;,&quot;links&quot;:{&quot;donated_projects&quot;:{&quot;linkage&quot;:[]},&quot;offices&quot;:{&quot;linkage&quot;:[]}}}}</pre>
+              <pre class="response body">{&quot;errors&quot;:[{&quot;status&quot;:&quot;404&quot;,&quot;title&quot;:&quot;Record not found&quot;}]}</pre>
       </div>
     </div>
   </body>

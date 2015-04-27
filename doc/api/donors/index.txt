@@ -1,5 +1,5 @@
-Get a donor show page
----------------------
+Get a particular donor data
+---------------------------
 
 Parameters:
   * id - A donor's id
@@ -19,15 +19,15 @@ Response:
   ETag: W/"6b03f1984a4873a09b2bdcb550fea62f"
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Request-Id: a0db6302-de11-448e-9efd-a51ceca8df20
-  X-Runtime: 0.031381
+  X-Request-Id: 7c1290d7-ecb9-4dc4-b333-bba6362ec662
+  X-Runtime: 0.066202
   X-XSS-Protection: 1; mode=block
 
   {"data":{"type":"donor","id":"2","name":"Red Cross","description":null,"website":null,"twitter":null,"facebook":null,"contact_person_name":null,"contact_company":null,"contact_person_position":null,"contact_email":null,"contact_phone_number":null,"site_specific_information":null,"logo":"/logos/medium/missing.png","links":{"donated_projects":{"linkage":[]},"offices":{"linkage":[]}}}}
 
 
-Get the show page for a non existing donor
-------------------------------------------
+Get the data of a non existing donor
+------------------------------------
 
 Parameters:
   * id - A donor's id
@@ -46,8 +46,8 @@ Response:
   Content-Type: application/json; charset=utf-8
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Request-Id: a6e97b29-d188-4a12-bd14-2ab0813b6beb
-  X-Runtime: 0.002833
+  X-Request-Id: 12ddf71c-3a62-43be-a746-6ad743d52f95
+  X-Runtime: 0.008366
   X-XSS-Protection: 1; mode=block
 
   {"errors":[{"status":"404","title":"Record not found"}]}
