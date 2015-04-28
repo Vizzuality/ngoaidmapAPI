@@ -1,6 +1,6 @@
 require 'acceptance_helper'
 
-resource 'Project' do
+resource 'Projects' do
   header "Accept", "application/json; application/vnd.esios-api-v1+json"
   header "Content-Type", "application/json"
   header 'Host', 'http://api.ngoaidmap.org'
@@ -32,7 +32,6 @@ resource 'Project' do
     example_request "Getting a list of projects by implementing organization" do
       expect(status).to eq(200)
       results = JSON.parse(response_body)['data'].map{|r| r['name']}
-      puts results
       expect(results).to eq(['project_with_organization'])
     end
   end

@@ -9,7 +9,7 @@ development:
 
 test:
   adapter: postgis
-  template: template_postgis
+  #template: template_postgis
   encoding: unicode
   database: iom_test
   username: postgres

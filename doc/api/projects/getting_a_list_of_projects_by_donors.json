@@ -1,5 +1,5 @@
 {
-  "resource": "Project",
+  "resource": "Projects",
   "http_method": "GET",
   "route": "/projects?donors[]=:donor",
   "description": "Getting a list of projects by donors",
@@ -40,8 +40,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"62bed2431f0cd2cb9a78b77f537c784b\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "85639c42-522b-4f05-8931-31c66c333dd0",
-        "X-Runtime": "0.028826",
+        "X-Request-Id": "0863dc6f-9b8e-4659-b939-2d2ddd101b61",
+        "X-Runtime": "0.030586",
         "Content-Length": "224"
       },
       "response_content_type": "application/json; charset=utf-8",

@@ -1,20 +1,20 @@
 require 'acceptance_helper'
 
-resource 'Donors' do
+resource 'Organizations' do
   header "Accept", "application/json; application/vnd.api+json"
   header "Content-Type", "application/vnd.api+json"
   header 'Host', 'http://api.ngoaidmap.org'
 
-  let!(:donor) do
-    create(:donor)
+  let!(:organization) do
+    create(:organization)
   end
 
-  get "/donors/:id" do
-    parameter :id, "A donor's id"
-    let(:id) { donor.id }
-    let(:name) { donor.name }
+  get "/organizations/:id" do
+    parameter :id, "An organization's id"
+    let(:id) { organization.id }
+    let(:name) { organization.name }
 
-    example_request "Get data for one donor" do
+    example_request "Get data for one organization" do
       expect(status).to eq(200)
       results = JSON.parse(response_body)
       expect(results.length).to be == 1
@@ -22,11 +22,11 @@ resource 'Donors' do
     end
   end
 
-  get "/donors/:id" do
-    parameter :id, "A donor's id"
-    let(:id) { donor.id + 1 }
+  get "/organizations/:id" do
+    parameter :id, "A organization's id"
+    let(:id) { organization.id + 1 }
 
-    example "Get the data of a non existing donor", document: false do
+    example "Get the data of a non existing organization", document: false do
       do_request(id: :id)
       expect(status).to eq(404)
       results = JSON.parse(response_body)

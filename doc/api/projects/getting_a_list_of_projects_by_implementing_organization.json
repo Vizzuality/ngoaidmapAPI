@@ -1,5 +1,5 @@
 {
-  "resource": "Project",
+  "resource": "Projects",
   "http_method": "GET",
   "route": "/projects?organizations[]=:organization",
   "description": "Getting a list of projects by implementing organization",
@@ -40,8 +40,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"0d0a867676fadd040c51b2aff54f1510\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "b067b167-2e3a-405d-afe5-30c065ac9992",
-        "X-Runtime": "0.020422",
+        "X-Request-Id": "f8c8e7fe-d639-48c4-81a1-96944e782063",
+        "X-Runtime": "0.037435",
         "Content-Length": "333"
       },
       "response_content_type": "application/json; charset=utf-8",

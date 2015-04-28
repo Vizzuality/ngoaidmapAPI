@@ -1,0 +1,28 @@
+Get data for one organization
+-----------------------------
+
+Parameters:
+  * id - An organization's id
+
+Request:
+  GET /organizations/2
+  Accept: application/json; application/vnd.api+json
+  Content-Type: application/vnd.api+json
+  Cookie: 
+  Host: http://api.ngoaidmap.org
+
+Response:
+  Status: 200 OK
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 136
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"4d58245763e0d68c65e1009d362cb36b"
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-Request-Id: 440ca713-67df-4f56-8f27-46f2047edacd
+  X-Runtime: 0.373341
+  X-XSS-Protection: 1; mode=block
+
+  {"data":{"type":"organizations","id":"2","name":"One Organization","description":null,"sectors":[],"links":{"projects":{"linkage":[]}}}}
+
+

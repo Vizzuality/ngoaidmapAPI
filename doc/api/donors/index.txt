@@ -1,5 +1,5 @@
-Get a particular donor data
----------------------------
+Get data for one donor
+----------------------
 
 Parameters:
   * id - A donor's id
@@ -19,37 +19,10 @@ Response:
   ETag: W/"6b03f1984a4873a09b2bdcb550fea62f"
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Request-Id: 7c1290d7-ecb9-4dc4-b333-bba6362ec662
-  X-Runtime: 0.066202
+  X-Request-Id: ac4e8ed1-481a-42eb-ad40-27b581367782
+  X-Runtime: 0.125857
   X-XSS-Protection: 1; mode=block
 
   {"data":{"type":"donor","id":"2","name":"Red Cross","description":null,"website":null,"twitter":null,"facebook":null,"contact_person_name":null,"contact_company":null,"contact_person_position":null,"contact_email":null,"contact_phone_number":null,"site_specific_information":null,"logo":"/logos/medium/missing.png","links":{"donated_projects":{"linkage":[]},"offices":{"linkage":[]}}}}
-
-
-Get the data of a non existing donor
-------------------------------------
-
-Parameters:
-  * id - A donor's id
-
-Request:
-  GET /donors/4
-  Accept: application/json; application/vnd.api+json
-  Content-Type: application/vnd.api+json
-  Cookie: 
-  Host: http://api.ngoaidmap.org
-
-Response:
-  Status: 404 Not Found
-  Cache-Control: no-cache
-  Content-Length: 56
-  Content-Type: application/json; charset=utf-8
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: SAMEORIGIN
-  X-Request-Id: 12ddf71c-3a62-43be-a746-6ad743d52f95
-  X-Runtime: 0.008366
-  X-XSS-Protection: 1; mode=block
-
-  {"errors":[{"status":"404","title":"Record not found"}]}
 
 

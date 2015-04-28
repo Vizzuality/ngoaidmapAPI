@@ -1,3 +1,6 @@
 class SectorPreviewSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :type, :id, :name
+  def type
+    'sectors'
+  end
 end

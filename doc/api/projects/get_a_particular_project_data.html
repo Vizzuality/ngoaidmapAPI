@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Donors API</title>
+    <title>Projects API</title>
     <meta charset="utf-8">
     <style>
       
@@ -110,11 +110,11 @@ table th, table td {
   </head>
   <body>
     <div class="container">
-      <h1>Donors API</h1>
+      <h1>Projects API</h1>
 
       <div class="article">
-        <h2>Get the data of a non existing donor</h2>
-        <h3>GET /donors/:id</h3>
+        <h2>Get a particular project data</h2>
+        <h3>GET /projects/:id</h3>
 
           <h3>Parameters</h3>
           <table class="parameters table table-striped table-bordered table-condensed">
@@ -130,7 +130,7 @@ table th, table td {
                     <span class="name">id</span>
                 </td>
                 <td>
-                  <span class="description">A donor&#39;s id</span>
+                  <span class="description">A project&#39;s id</span>
                 </td>
               </tr>
             </tbody>
@@ -140,20 +140,20 @@ table th, table td {
           <h3>Request</h3>
 
           <h4>Headers</h4>
-          <pre class="request headers">Accept: application/json; application/vnd.api+json
-Content-Type: application/vnd.api+json
+          <pre class="request headers">Accept: application/json; application/vnd.esios-api-v1+json
+Content-Type: application/json
 Host: http://api.ngoaidmap.org
 Cookie: </pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /donors/4</pre>
+          <pre class="request route highlight">GET /projects/15</pre>
 
 
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://api.ngoaidmap.org/donors/4&quot; -X GET \
-	-H &quot;Accept: application/json; application/vnd.api+json&quot; \
-	-H &quot;Content-Type: application/vnd.api+json&quot; \
+            <pre class="request curl">curl &quot;http://api.ngoaidmap.org/projects/15&quot; -X GET \
+	-H &quot;Accept: application/json; application/vnd.esios-api-v1+json&quot; \
+	-H &quot;Content-Type: application/json&quot; \
 	-H &quot;Host: http://api.ngoaidmap.org&quot; \
 	-H &quot;Cookie: &quot;</pre>
 
@@ -163,14 +163,15 @@ Cookie: </pre>
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 Content-Type: application/json; charset=utf-8
-Cache-Control: no-cache
-X-Request-Id: 12ddf71c-3a62-43be-a746-6ad743d52f95
-X-Runtime: 0.008366
-Content-Length: 56</pre>
+ETag: W/&quot;58a4bb1e50b7ebf01085740fbb120b63&quot;
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: cc60877e-0c4d-4210-9049-67a62d1e5c79
+X-Runtime: 0.010047
+Content-Length: 197</pre>
             <h4>Status</h4>
-            <pre class="response status">404 Not Found</pre>
+            <pre class="response status">200 OK</pre>
               <h4>Body</h4>
-              <pre class="response body">{&quot;errors&quot;:[{&quot;status&quot;:&quot;404&quot;,&quot;title&quot;:&quot;Record not found&quot;}]}</pre>
+              <pre class="response body">{&quot;data&quot;:{&quot;type&quot;:&quot;projects&quot;,&quot;id&quot;:&quot;15&quot;,&quot;name&quot;:&quot;One Project&quot;,&quot;description&quot;:null,&quot;links&quot;:{&quot;organization&quot;:{&quot;linkage&quot;:null},&quot;sectors&quot;:{&quot;linkage&quot;:[]},&quot;countries&quot;:{&quot;linkage&quot;:[]},&quot;regions&quot;:{&quot;linkage&quot;:[]}}}}</pre>
       </div>
     </div>
   </body>

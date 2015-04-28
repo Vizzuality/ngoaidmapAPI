@@ -1,5 +1,5 @@
 {
-  "resource": "Project",
+  "resource": "Projects",
   "http_method": "GET",
   "route": "/projects?countries[]=:country",
   "description": "Getting a list of projects by countries",
@@ -40,8 +40,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"8a4d51f6232d1ccdf7cb152c7b732f71\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "0d571848-d02a-4eb5-bba0-749d2b02292c",
-        "X-Runtime": "0.068411",
+        "X-Request-Id": "d6fdd6fe-eb46-437b-a869-1d7274cf9799",
+        "X-Runtime": "0.045119",
         "Content-Length": "361"
       },
       "response_content_type": "application/json; charset=utf-8",

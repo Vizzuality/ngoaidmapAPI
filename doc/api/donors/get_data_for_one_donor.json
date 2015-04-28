@@ -2,7 +2,7 @@
   "resource": "Donors",
   "http_method": "GET",
   "route": "/donors/:id",
-  "description": "Get a particular donor data",
+  "description": "Get data for one donor",
   "explanation": null,
   "parameters": [
     {
@@ -37,8 +37,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"6b03f1984a4873a09b2bdcb550fea62f\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "7c1290d7-ecb9-4dc4-b333-bba6362ec662",
-        "X-Runtime": "0.066202",
+        "X-Request-Id": "ac4e8ed1-481a-42eb-ad40-27b581367782",
+        "X-Runtime": "0.125857",
         "Content-Length": "385"
       },
       "response_content_type": "application/json; charset=utf-8",

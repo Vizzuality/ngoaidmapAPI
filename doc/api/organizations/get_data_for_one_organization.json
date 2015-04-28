@@ -1,0 +1,48 @@
+{
+  "resource": "Organizations",
+  "http_method": "GET",
+  "route": "/organizations/:id",
+  "description": "Get data for one organization",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "id",
+      "description": "An organization's id"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/organizations/2",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json; application/vnd.api+json",
+        "Content-Type": "application/vnd.api+json",
+        "Host": "http://api.ngoaidmap.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"data\":{\"type\":\"organizations\",\"id\":\"2\",\"name\":\"One Organization\",\"description\":null,\"sectors\":[],\"links\":{\"projects\":{\"linkage\":[]}}}}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"4d58245763e0d68c65e1009d362cb36b\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "440ca713-67df-4f56-8f27-46f2047edacd",
+        "X-Runtime": "0.373341",
+        "Content-Length": "136"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://api.ngoaidmap.org/organizations/2\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.api+json\" \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Host: http://api.ngoaidmap.org\" \\\n\t-H \"Cookie: \""
+    }
+  ]
+}

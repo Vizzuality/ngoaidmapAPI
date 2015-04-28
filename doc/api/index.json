@@ -4,53 +4,58 @@
       "name": "Donors",
       "examples": [
         {
-          "description": "Get a particular donor data",
-          "link": "donors/get_a_particular_donor_data.json",
-          "groups": "all"
-        },
-        {
-          "description": "Get the data of a non existing donor",
-          "link": "donors/get_the_data_of_a_non_existing_donor.json",
+          "description": "Get data for one donor",
+          "link": "donors/get_data_for_one_donor.json",
           "groups": "all"
         }
       ]
     },
     {
-      "name": "Project",
+      "name": "Organizations",
+      "examples": [
+        {
+          "description": "Get data for one organization",
+          "link": "organizations/get_data_for_one_organization.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Projects",
       "examples": [
         {
           "description": "Get a particular project data",
-          "link": "project/get_a_particular_project_data.json",
+          "link": "projects/get_a_particular_project_data.json",
           "groups": "all"
         },
         {
           "description": "Getting a list of projects",
-          "link": "project/getting_a_list_of_projects.json",
+          "link": "projects/getting_a_list_of_projects.json",
           "groups": "all"
         },
         {
           "description": "Getting a list of projects by countries",
-          "link": "project/getting_a_list_of_projects_by_countries.json",
+          "link": "projects/getting_a_list_of_projects_by_countries.json",
           "groups": "all"
         },
         {
           "description": "Getting a list of projects by donors",
-          "link": "project/getting_a_list_of_projects_by_donors.json",
+          "link": "projects/getting_a_list_of_projects_by_donors.json",
           "groups": "all"
         },
         {
           "description": "Getting a list of projects by implementing organization",
-          "link": "project/getting_a_list_of_projects_by_implementing_organization.json",
+          "link": "projects/getting_a_list_of_projects_by_implementing_organization.json",
           "groups": "all"
         },
         {
           "description": "Getting a list of projects by regions",
-          "link": "project/getting_a_list_of_projects_by_regions.json",
+          "link": "projects/getting_a_list_of_projects_by_regions.json",
           "groups": "all"
         },
         {
           "description": "Getting a list of projects by sectors",
-          "link": "project/getting_a_list_of_projects_by_sectors.json",
+          "link": "projects/getting_a_list_of_projects_by_sectors.json",
           "groups": "all"
         }
       ]

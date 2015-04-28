@@ -1,5 +1,5 @@
 {
-  "resource": "Project",
+  "resource": "Projects",
   "http_method": "GET",
   "route": "/projects?regions[]=:region",
   "description": "Getting a list of projects by regions",
@@ -40,8 +40,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"5d8f97b4c96d073c98544cd702d7c889\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "c12eb9ff-13e6-485b-bf53-cf646949f727",
-        "X-Runtime": "0.023795",
+        "X-Request-Id": "4d9b62f6-de2e-46b2-b45c-0855141f2062",
+        "X-Runtime": "0.028662",
         "Content-Length": "374"
       },
       "response_content_type": "application/json; charset=utf-8",
