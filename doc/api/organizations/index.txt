@@ -14,15 +14,40 @@ Request:
 Response:
   Status: 200 OK
   Cache-Control: max-age=0, private, must-revalidate
-  Content-Length: 136
+  Content-Length: 171
   Content-Type: application/json; charset=utf-8
-  ETag: W/"4d58245763e0d68c65e1009d362cb36b"
+  ETag: W/"52fa169fdb998d36c7e7df8af1f90441"
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Request-Id: 440ca713-67df-4f56-8f27-46f2047edacd
-  X-Runtime: 0.373341
+  X-Request-Id: 0269fa21-71fb-4154-abf2-cdd3c512b117
+  X-Runtime: 0.132048
   X-XSS-Protection: 1; mode=block
 
-  {"data":{"type":"organizations","id":"2","name":"One Organization","description":null,"sectors":[],"links":{"projects":{"linkage":[]}}}}
+  {"data":{"type":"organizations","id":"2","name":"One Organization","description":null,"sectors":[],"logo":"/logos/medium/missing.png","links":{"projects":{"linkage":[]}}}}
+
+
+Getting a list of organizations
+-------------------------------
+
+Request:
+  GET /organizations
+  Accept: application/json; application/vnd.api+json
+  Content-Type: application/vnd.api+json
+  Cookie: 
+  Host: http://api.ngoaidmap.org
+
+Response:
+  Status: 200 OK
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 320
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"2300c8a48844ef024bf84ee4d60d2fac"
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-Request-Id: d5ba662a-6eed-4a6b-9d26-1aaa84aacc89
+  X-Runtime: 0.007597
+  X-XSS-Protection: 1; mode=block
+
+  {"data":[{"id":"1","name":"One Organization","type":"organizations"},{"id":"4","name":"One Organization","type":"organizations"},{"id":"5","name":"organization0","type":"organizations"},{"id":"6","name":"organization1","type":"organizations"},{"id":"7","name":"organization2","type":"organizations"}],"meta":{"total":5}}
 
 

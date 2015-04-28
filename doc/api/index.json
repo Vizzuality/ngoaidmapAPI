@@ -17,6 +17,11 @@
           "description": "Get data for one organization",
           "link": "organizations/get_data_for_one_organization.json",
           "groups": "all"
+        },
+        {
+          "description": "Getting a list of organizations",
+          "link": "organizations/getting_a_list_of_organizations.json",
+          "groups": "all"
         }
       ]
     },

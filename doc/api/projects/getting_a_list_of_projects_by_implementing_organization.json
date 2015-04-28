@@ -32,17 +32,17 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"type\":\"projects\",\"id\":\"1\",\"name\":\"project_with_organization\",\"description\":null,\"links\":{\"organization\":{\"linkage\":{\"type\":\"organizations\",\"id\":\"1\"}},\"sectors\":{\"linkage\":[]},\"countries\":{\"linkage\":[]},\"regions\":{\"linkage\":[]}}}],\"included\":[{\"id\":\"1\",\"name\":\"One Organization\",\"type\":\"organizations\"}],\"meta\":{\"total\":1}}",
+      "response_body": "{\"data\":[{\"type\":\"projects\",\"id\":\"1\",\"name\":\"project_with_organization\",\"description\":null,\"links\":{\"organization\":{\"linkage\":{\"type\":\"organizations\",\"id\":\"1\"}},\"sectors\":{\"linkage\":[]},\"countries\":{\"linkage\":[]},\"regions\":{\"linkage\":[]}}}],\"included\":[{\"id\":\"1\",\"name\":\"One Organization\",\"type\":\"organizations\"}],\"meta\":{\"total\":{\"[1, nil, nil, nil, nil, 1]\":1}}}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"0d0a867676fadd040c51b2aff54f1510\"",
+        "ETag": "W/\"ce8560ce6b9931f7b752debc9f100a0b\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "f8c8e7fe-d639-48c4-81a1-96944e782063",
-        "X-Runtime": "0.037435",
-        "Content-Length": "333"
+        "X-Request-Id": "3ea88a3a-65c8-4d4d-abf1-64d555a797e3",
+        "X-Runtime": "0.038000",
+        "Content-Length": "364"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl \"http://api.ngoaidmap.org/projects?organizations[]=1\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.esios-api-v1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: http://api.ngoaidmap.org\" \\\n\t-H \"Cookie: \""

@@ -19,8 +19,8 @@ Response:
   ETag: W/"6b03f1984a4873a09b2bdcb550fea62f"
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Request-Id: ac4e8ed1-481a-42eb-ad40-27b581367782
-  X-Runtime: 0.125857
+  X-Request-Id: d83a97cb-ca36-4220-ba97-16e7c35bdcda
+  X-Runtime: 0.096756
   X-XSS-Protection: 1; mode=block
 
   {"data":{"type":"donor","id":"2","name":"Red Cross","description":null,"website":null,"twitter":null,"facebook":null,"contact_person_name":null,"contact_company":null,"contact_person_position":null,"contact_email":null,"contact_phone_number":null,"site_specific_information":null,"logo":"/logos/medium/missing.png","links":{"donated_projects":{"linkage":[]},"offices":{"linkage":[]}}}}
