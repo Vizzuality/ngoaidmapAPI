@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     scope module: :v1 do
       resources :projects, only: [:index, :show]
       resources :donors, only: [:show]
+      resources :organizations, only: [:index, :show]
     end
   end
    mount Raddocs::App => "/docs"
