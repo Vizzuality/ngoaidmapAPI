@@ -16,6 +16,16 @@
       ]
     },
     {
+      "name": "Organization",
+      "examples": [
+        {
+          "description": "Getting a list of organizations",
+          "link": "organization/getting_a_list_of_organizations.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
       "name": "Project",
       "examples": [
         {

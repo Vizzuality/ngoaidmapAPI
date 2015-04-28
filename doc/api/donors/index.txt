@@ -19,8 +19,8 @@ Response:
   ETag: W/"6b03f1984a4873a09b2bdcb550fea62f"
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Request-Id: 7c1290d7-ecb9-4dc4-b333-bba6362ec662
-  X-Runtime: 0.066202
+  X-Request-Id: d06a930f-41c0-4c29-9447-d6c2ccc55f55
+  X-Runtime: 0.028947
   X-XSS-Protection: 1; mode=block
 
   {"data":{"type":"donor","id":"2","name":"Red Cross","description":null,"website":null,"twitter":null,"facebook":null,"contact_person_name":null,"contact_company":null,"contact_person_position":null,"contact_email":null,"contact_phone_number":null,"site_specific_information":null,"logo":"/logos/medium/missing.png","links":{"donated_projects":{"linkage":[]},"offices":{"linkage":[]}}}}
@@ -46,8 +46,8 @@ Response:
   Content-Type: application/json; charset=utf-8
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  X-Request-Id: 12ddf71c-3a62-43be-a746-6ad743d52f95
-  X-Runtime: 0.008366
+  X-Request-Id: 072d2ec2-4b3c-44d8-bbb1-ade532855f4c
+  X-Runtime: 0.004578
   X-XSS-Protection: 1; mode=block
 
   {"errors":[{"status":"404","title":"Record not found"}]}

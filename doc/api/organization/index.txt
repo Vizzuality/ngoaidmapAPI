@@ -1,0 +1,25 @@
+Getting a list of organizations
+-------------------------------
+
+Request:
+  GET /organizations
+  Accept: application/json; application/vnd.api+json
+  Content-Type: application/vnd.api+json
+  Cookie: 
+  Host: http://api.ngoaidmap.org
+
+Response:
+  Status: 200 OK
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Length: 260
+  Content-Type: application/json; charset=utf-8
+  ETag: W/"629c5fd470a388b67d128ff951e8291c"
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-Request-Id: cf0057ed-b61d-44e9-a2d8-5c175a9ceeab
+  X-Runtime: 0.008592
+  X-XSS-Protection: 1; mode=block
+
+  {"data":[{"id":"1","name":"One Organization","type":"organizations"},{"id":"2","name":"organization0","type":"organizations"},{"id":"3","name":"organization1","type":"organizations"},{"id":"4","name":"organization2","type":"organizations"}],"meta":{"total":4}}
+
+

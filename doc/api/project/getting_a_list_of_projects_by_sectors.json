@@ -32,17 +32,17 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"type\":\"projects\",\"id\":\"3\",\"name\":\"project_with_sector\",\"description\":null,\"links\":{\"organization\":{\"linkage\":null},\"sectors\":{\"linkage\":[{\"type\":\"sectors\",\"id\":\"1\"}]},\"countries\":{\"linkage\":[]},\"regions\":{\"linkage\":[]}}}],\"included\":[{\"id\":\"1\",\"name\":\"Agriculture\",\"type\":\"sectors\"}],\"meta\":{\"total\":1}}",
+      "response_body": "{\"data\":[{\"type\":\"projects\",\"id\":\"3\",\"name\":\"project_with_sector\",\"description\":null,\"links\":{\"organization\":{\"linkage\":null},\"sectors\":{\"linkage\":[{\"type\":\"sectors\",\"id\":\"1\"}]},\"countries\":{\"linkage\":[]},\"regions\":{\"linkage\":[]}}}],\"included\":[{\"id\":\"1\",\"name\":\"Agriculture\",\"type\":\"sectors\"}],\"meta\":{\"total\":{\"[3, nil, nil, 1, nil, nil]\":1}}}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
         "X-Content-Type-Options": "nosniff",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"4603f3884cdce50f313bb94024f3db2f\"",
+        "ETag": "W/\"a33a6f3fec8d73526e10df721621644c\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "2075c504-b363-445b-bda8-6e0c2573be5d",
-        "X-Runtime": "0.023686",
-        "Content-Length": "314"
+        "X-Request-Id": "dc3ac244-ed78-4f2d-9de6-944591771ea5",
+        "X-Runtime": "0.025772",
+        "Content-Length": "345"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl \"http://api.ngoaidmap.org/projects?sectors[]=1\" -X GET \\\n\t-H \"Accept: application/json; application/vnd.esios-api-v1+json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: http://api.ngoaidmap.org\" \\\n\t-H \"Cookie: \""
