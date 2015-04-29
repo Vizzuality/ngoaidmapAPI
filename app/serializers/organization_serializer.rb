@@ -1,6 +1,6 @@
 class OrganizationSerializer < ActiveModel::Serializer
   attributes :type, :id, :name, :description, :sectors, :logo
-  has_many :projects, serializer: ProjectSerializer
+  has_many :projects, serializer: ProjectWithoutOrganizationSerializer
   def type
     'organizations'
   end
