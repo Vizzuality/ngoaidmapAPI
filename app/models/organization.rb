@@ -71,21 +71,5 @@ class Organization < ActiveRecord::Base
   has_many :sites, foreign_key: :project_context_organization_id
   has_many :donations, through: :projects
   has_one :user
-  scope :active, -> {where("projects.end_date > ?", Date.today.to_s(:db))}
-  scope :projects, -> (projects){where(projects: {primari_organization_id: projects})}
-  scope :sectors, -> (sectors){where(sectors: {id: sectors})}
-  scope :donors, -> (donors){where(donors: {id: donors})}
-  scope :countries, -> (countries){where(countries: {id: countries})}
-  scope :regions, -> (regions){where(regions: {id: regions})}
-  def self.fetch_all(options = {})
-    organizations = Organization.joins([:projects]).eager_load([projects: :countries], [projects: :regions], [projects: :sectors], [projects: :donors])
-    organizations = organizations.organizations(options[:organizations]) if options[:organizations]
-    organizations = organizations.countries(options[:countries])         if options[:countries]
-    organizations = organizations.regions(options[:regions])             if options[:regions]
-    organizations = organizations.sectors(options[:sectors])             if options[:sectors]
-    organizations = organizations.donors(options[:donors])               if options[:donors]
-    organizations = organizations.active
-    organizations = organizations.group('organizations.id', 'countries.id', 'regions.id', 'sectors.id', 'donors.id', 'projects.id')
-    organizations.uniq
-  end
+  scope :active, -> {joins(:projects).where("projects.end_date > ? AND projects.start_date < ?", Date.today.to_s(:db), Date.today.to_s(:db))}
 end
